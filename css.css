@@ -1,0 +1,27 @@
+.img{
+    width: 200px;
+    height: 200px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;    
+}
+.inline{
+    display: flex;
+    flex-direction: row;  
+}
+.charmander{
+    border: 1px solid red;
+    background-color: brown;
+}
+.squirtle{
+    border: 1px solid blue;
+    background-color: rgba(0, 26, 255, 0.808);
+}
+.bulbasaur{
+    border: 1px solid green;
+    background-color: rgb(62, 128, 0);
+}
