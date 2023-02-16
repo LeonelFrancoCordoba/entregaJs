@@ -4,6 +4,7 @@ let mostrarEquipo = document.createElement("div")
 let mostrarTeam = document.getElementById("mostrarTeam")
 let pokedex = document.getElementById("pokedex")
 let boton = document.getElementById("boton")
+let boton2 = document.getElementById("boton2")
 let pokedex151 = []
 
 
@@ -42,3 +43,10 @@ pokedex.addEventListener("click", (event) => {
   {
     LimpiarMuestra()
   })
+
+/*mostrar equipo manualmente*/
+boton2.addEventListener("click",()=>
+{
+  LimpiarMuestra()
+  equipo_creado(team)
+})

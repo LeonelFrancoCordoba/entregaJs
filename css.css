@@ -14,6 +14,7 @@
     border-radius: 4px;   
     background-color:#ddd; 
     border: 2px solid black;
+    width: auto;
     
 }
 .box2{
@@ -78,7 +79,8 @@ body{
     background-color: brown;
 }
 button{
-    height: 50px;
+    height: auto;
+    width: auto;
 }
 .espaciado{
     margin-left: 40%;
