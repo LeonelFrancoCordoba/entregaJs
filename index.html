@@ -5,31 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
     <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Oswald:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/images.png" type="image/x-icon">
 </head>
 <body>
-    <h1>Region Kanto</h1>
-    <h2>Bienvenido, en esta pagina podras elegir a tus pokemons para crear tu equipo y vencer la liga de Kanto.</h2>
-    <h4>Actualmente el servidor se encuentra en arreglos por lo que solo podras elegir a tu pokemon inicial para el equipo</h4>
-   <div class="inline">
-    <div class="box charmander" id="charmander">
-        <img src="img/charmander.png" class="img" alt="charmander">
-        <h2>Charmander</h2>
-        <p>Inicial de tipo Fuego</p>
-    </div>
-    <div class="box Squirtle" id="squirtle">
-        <img src="img/squirtel.jpg" class="img" alt="squirtle">
-        <h2>Squirtle</h2>
-        <p>Inicial de tipo Agua</p>
-    </div>
-    <div class="box bulbasaur" id="bulbasaur">
-        <img src="img/planta.jpg" class="img" alt="bulbasaur">
-        <h2>Bulbasaur</h2>
-        <p>Inicial de tipo Planta</p>
-    </div>
+    <h1 class="h1">Region Kanto</h1>
+    <h2 class="subtitulo">Bienvenido, en esta pagina podras elegir a tus pokemons para crear tu equipo y vencer la liga de Kanto.</h2>
     
-</div>
-<div id="equipoPrevio"></div>
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="js.js"></script>
+
+<div id="mostrarTeam"></div>
+<div id="pokedex" class="box"></div>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>    
+<script src="fetch.js"></script>
+<script src="dom-events.js"></script>
+<script src="json-storage.js"></script>
+<script src="funciones.js"></script>
 </body>
 </html>
