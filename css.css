@@ -77,3 +77,13 @@ font-family: 'Oswald', sans-serif;
 body{
     background-color: brown;
 }
+button{
+    height: 50px;
+}
+.espaciado{
+    margin-left: 40%;
+    border: 5px solid black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}

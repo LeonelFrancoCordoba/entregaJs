@@ -6,3 +6,4 @@ function GuardarEnLocal(){
 function RecibirDelLocal(){
     localStorage.getItem("team", JSON.parse(team))
 }
+

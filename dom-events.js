@@ -3,9 +3,11 @@ let muestra = document.createElement("div")
 let mostrarEquipo = document.createElement("div")
 let mostrarTeam = document.getElementById("mostrarTeam")
 let pokedex = document.getElementById("pokedex")
-
+let boton = document.getElementById("boton")
 let pokedex151 = []
 
+
+/*Interaccion con el usuario por SA*/
 pokedex.addEventListener("click", (event) => {
     if (event.target.matches(".pokemon-card")) {
      if(team.length<6)  {
@@ -22,9 +24,11 @@ pokedex.addEventListener("click", (event) => {
       }).then((result) => {
         
         if (result.isConfirmed) {
+          LimpiarMuestra()
+          Swal.fire(`Lo vas a encontrar arriba de la pokedex`);
           
-          Swal.fire(`Lo vas a encontrar arriba de la pokedex`)
-          equipo_creado(team)
+            equipo_creado(team);
+         
         } else if (result.isDenied) {
           Swal.fire(`El equipo se ha borrado`)
           team.length = 0
@@ -32,3 +36,9 @@ pokedex.addEventListener("click", (event) => {
       })
     }
   }});
+
+/*limpieza visual rapida*/
+  boton.addEventListener("click",()=>
+  {
+    LimpiarMuestra()
+  })

@@ -64,3 +64,11 @@ function equipo_creado(arr) {
     }
   }
   YaHayEquipo()
+  
+  /*Limpia la tabla de team*/
+  function LimpiarMuestra(){
+    while (mostrarTeam.firstChild) {
+        mostrarTeam.removeChild(mostrarTeam.firstChild)
+      }
+      mostrarEquipo.innerHTML= ` `
+  }
