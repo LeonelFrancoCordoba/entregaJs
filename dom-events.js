@@ -32,6 +32,7 @@ pokedex.addEventListener("click", (event) => {
         } else if (result.isDenied) {
           Swal.fire(`El equipo se ha borrado`)
           team.length = 0
+          LimpiarMuestra()
         }
       })
     }
