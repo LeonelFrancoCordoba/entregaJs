@@ -14,7 +14,9 @@ pokedex.addEventListener("click", (event) => {
      if(team.length<6)  {
       team.push(pokedex151[event.target.id])
         GuardarEnLocal()
-        swal.fire(`Elegiste a ${pokedex151[event.target.id].name}`)}
+        swal.fire(`Elegiste a ${pokedex151[event.target.id].name}`)
+        LimpiarMuestra()
+  equipo_creado(team)}
      else {
       Swal.fire({
         title: 'Tu equipo esta lleno',
@@ -45,9 +47,3 @@ pokedex.addEventListener("click", (event) => {
     reinicio()
   })
 
-/*mostrar equipo manualmente*/
-boton2.addEventListener("click",()=>
-{
-  LimpiarMuestra()
-  equipo_creado(team)
-})
