@@ -72,3 +72,7 @@ function equipo_creado(arr) {
       }
       mostrarEquipo.innerHTML= ` `
   }
+  
+  function reinicio(){
+    team.length = 0
+  }

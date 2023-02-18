@@ -42,6 +42,7 @@ pokedex.addEventListener("click", (event) => {
   boton.addEventListener("click",()=>
   {
     LimpiarMuestra()
+    reinicio()
   })
 
 /*mostrar equipo manualmente*/
