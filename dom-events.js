@@ -6,7 +6,7 @@ let pokedex = document.getElementById("pokedex")
 let boton = document.getElementById("boton")
 let boton2 = document.getElementById("boton2")
 let pokedex151 = []
-
+let marcaParaScroll = document.getElementById("equipo")
 
 /*Interaccion con el usuario por SA*/
 pokedex.addEventListener("click", (event) => {
@@ -27,11 +27,8 @@ pokedex.addEventListener("click", (event) => {
       }).then((result) => {
         
         if (result.isConfirmed) {
-          LimpiarMuestra()
-          Swal.fire(`Lo vas a encontrar arriba de la pokedex`);
-          
-            equipo_creado(team);
-         
+          equipo.scrollIntoView();
+
         } else if (result.isDenied) {
           Swal.fire(`El equipo se ha borrado`)
           team.length = 0
